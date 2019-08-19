@@ -81,6 +81,28 @@ ul.navbar-nav li a.nav-link {
     font-family: 'Poppins', sans-serif;
 }
 
+#myBtn {
+    display: none;
+    /* background-color: #666; */
+    color :#666;
+    font-size:40px; 
+    position:fixed;
+    bottom: 20px;
+    right: 30px;
+    padding: 2px;
+    font-size: 30px;
+    width: 40px;
+
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px; 
+
+}
+  
+  #myBtn:hover {
+    background-color: #ccc;
+  }
+
 @media (max-width: 768px) {
     #spotlight {
         height: 60vh;

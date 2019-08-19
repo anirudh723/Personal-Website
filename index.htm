@@ -22,7 +22,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/backToTop.js"></script>
     <script src="js/introTextEffects.js"></script>
+    <script src="js/navbarResizeEffect.js"></script>
+    <script src="js/toggleDropdown.js"> </script>
 </head>
 
 <body>
@@ -33,7 +37,7 @@
                 <a class="navbar-brand text-white-50" href="index.htm">Anirudh Singh</a>
 
                 <!-- Toggler/collapsible Button -->
-                <button class="navbar-toggler bg-secondary" type="button"
+                <button class="navbar-toggler bg-secondary" onclick="toggleDropdown();"type="button"
                     data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -183,8 +187,10 @@
                     </div>
                 </div> <!-- footer container ends-->
             </section> <!-- footer section ends-->
-    </div> <!-- wrapper ends -->
-
-</body>
-
-</html>
+    
+            <button class="fas fa-arrow-circle-up" onclick="topFunction()" id="myBtn" title="Go to top"></button>
+        </div> <!-- wrapper ends -->
+    
+    </body>
+    
+    </html>
