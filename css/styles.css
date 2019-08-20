@@ -75,11 +75,19 @@ h5 {
     margin-bottom: 4%; 
 }
 
+.quote {
+    color: #b2bbbb;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
 ul.navbar-nav li a.nav-link {
     padding: 2% 2.5%;
     font-size: .8em;
     font-family: 'Poppins', sans-serif;
 }
+
 
 #myBtn {
     display: none;
@@ -102,6 +110,99 @@ ul.navbar-nav li a.nav-link {
   #myBtn:hover {
     background-color: #ccc;
   }
+  
+  .box {
+      width: 100%;
+      height: 100%;
+  }
+
+  .box:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      background: transparent;
+      border: 3px solid transparent
+    }
+
+.box:hover:before {
+    animation: animate-right-down 1s linear forwards;
+}
+@keyframes animate-right-down {
+    0%
+    {
+        width: 0;
+        height: 0;
+        border-top-color: #3354AF;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    50%
+    {
+        width: 100%;
+        height: 0;
+        border-top-color: #3354AF;
+        border-right-color: #3354AF;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    100%
+    {
+        width: 100%;
+        height: 100%;
+        border-top-color: #3354AF;
+        border-right-color: #3354AF;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+}
+
+.box:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 3px solid transparent
+  }
+.box:hover:after {
+    animation: animate-down-right 1s linear forwards;
+}
+@keyframes animate-down-right {
+    0%
+    {
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: #3354AF;
+    }
+    50%
+    {
+        width: 0%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #3354AF;
+        border-left-color: #3354AF;
+    }
+    100%
+    {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #3354AF;
+        border-left-color: #3354AF;
+    }
+}
+
 
 @media (max-width: 768px) {
     #spotlight {
