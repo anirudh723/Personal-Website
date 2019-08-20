@@ -37,11 +37,12 @@ nav {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: 100% 100%;
-    /* background-size: cover; */
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    /* background-size: 100% 100%; */
+    
 }
 
 .spotlight-box {
@@ -332,8 +333,7 @@ ul.navbar-nav li a.nav-link {
     }
   }
 
-  @media only screen and (max-width: 560px) {
+  /* @media only screen and (max-width: 560px) {
       #spotlight {
-        min-width: 50%;
       }
-  }
+  } */
