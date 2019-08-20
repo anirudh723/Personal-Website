@@ -27,12 +27,13 @@
     <script src="js/introTextEffects.js"></script>
     <script src="js/navbarResizeEffect.js"></script>
     <script src="js/toggleDropdown.js"> </script>
+    <script src="js/stickyNav.js"> </script>
 </head>
 
 <body>
     <div id="wrapper">
         <div id="spotlight" class="container-fluid" style="padding: 0;">
-            <nav class="navbar navbar-expand-md navbar-dark">
+            <nav class="navbar sticky navbar-expand-md navbar-dark">
                 <!-- Brand -->
                 <a class="navbar-brand text-white-50" href="index.htm">Anirudh Singh</a>
 
@@ -43,7 +44,7 @@
                 </button>
 
                 <!-- Navbar links -->
-                <div id="collapsibleNavbar" class="collapse  navbar-collapse sidenav justify-content-end">
+                <div id="collapsibleNavbar" class="collapse navbar-collapse sidenav justify-content-end">
                     <ul class="navbar-nav text-uppercase" style="letter-spacing: 2px;">
                         <li class="nav-item">
                             <a class="nav-link" href="index.htm">Home</a>
@@ -66,9 +67,9 @@
                     </ul>
                 </div>
             </nav>
-            <div class="spotlight-box container-fluid animated mt-4">
-                <h2 class="intro-text">Hello! My name is Anirudh Singh.</h2>
-                <h1 class="intro-text">Developer. Photographer.</h1>
+            <div class="spotlight-box container-fluid animated">
+                <h2 class="intro-text intro-text-mob">Hello! My name is Anirudh Singh.</h2>
+                <h1 class="intro-text intro-text-mob">Developer. Photographer.</h1>
                 <a href="#portfolio"> <button class="btn btn-outline-secondary p-2 mt-5;">View My Portfolio!
                         <i class="fas fa-laptop-code"></i> </button>
                 </a>
@@ -76,9 +77,9 @@
             <!--spotlight-text div ends-->
         </div> <!-- spotlight container fluid ends -->
 
-        <section id="about" class="section-title">
+        <section id="about" class="section-container">
             <div class="container-fluid">
-                <h2 class="section-title">About Me</h2>
+                <h2 class="section-title">ABOUT ME</h2>
                 <h5 class="quote">“Protons give an atom its identity, electrons its personality.” - Bill Bryson</h5>
                 <div class="row mt-4">
                     <div class="col-md-6">
@@ -105,19 +106,29 @@
             </div> <!-- about me container ends-->
         </section> <!-- about me section ends-->
 
-        <section id="portfolio" class="section-title">
+        <section id="portfolio" class="section-container" style="background-color: #262626">
+            <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+                <path d="M0 0 L50 100 L100 0 Z" fill="black" stroke="black"></path>
+            </svg>
             <div class="container-fluid text-center">
-                <h2 class="section-title">Portfolio</h2>
+                <h2 class="section-title">PORTFOLIO</h2>
+                <h5 class="quote">"The best way to learn is by doing. The only way to build a strong work ethic is
+                    getting your hands dirty."
+                    – Alex Spanos</h5>
                 <div class="row justify-content-center">
+                    <div class="col-md-3 m-4 text-light box justify-content-center">
+                        <h3 style="font-weight: 200">ALEXA SKILL <i class="material-icons">chat_bubble_outline</i></h3>
+                        <p>Built an Alexa skill called 'CSWiki', which provides simple and helpful definitions for
+                            common keywords
+                            in the area of Computer Science. I used Python to write the program, along with the Amazon
+                            Web Services (AWS) Lambda tool in order to run and test my code.</p>
+                    </div>
                     <div class="col-md-3 m-4 text-light box justify-content-center">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labori in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
-                    <div class="col-md-3 m-4 text-light box">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labori in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                    <div class="col-md-3 m-4 text-light box">
+                    <div class="col-md-3 m-4 text-light box justify-content-center">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. mollit anim id est laborum.</p>
                     </div>
@@ -125,20 +136,24 @@
             </div> <!-- portfolio container ends-->
         </section> <!-- portfolio section ends-->
 
-        <section id="gallery" class="section-title">
+        <section id="gallery" class="section-container">
+            <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+                <path d="M0 0 L50 100 L100 0 Z" fill="#262626" stroke="#262626"></path>
+            </svg>
             <div class="container-fluid text-center">
-                <h2 class="section-title">Gallery</h2>
+                <h2 class="section-title">GALLERY</h2>
                 <div class="row justify-content-center">
-                    <div class="col-md-3 bg-white text-dark m-4">
+                    <div class="col-md-3 m-4 text-light box justify-content-center">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             labori in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
-                    <div class="col-md-3 bg-white text-dark m-4 ">
+                    <div class="col-md-3 m-4 text-light box justify-content-center">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labori in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
-                    <div class="col-md-3 bg-white text-dark m-4">
+                    <div class="col-md-3 m-4 text-light box justify-content-center">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. mollit anim id est laborum.</p>
                     </div>
@@ -146,20 +161,28 @@
             </div> <!-- gallery container ends-->
         </section> <!-- gallery section ends-->
 
-        <section id="skills" class="section-title">
+        <section id="skills" class="section-container" style="background-color: #262626">
+            <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+                <path d="M0 0 L50 100 L100 0 Z" fill="black" stroke="black"></path>
+            </svg>
             <div class="container-fluid text-center">
-                <h2 class="section-title">Skills</h2>
+                <h2 class="section-title">SKILLS</h2>
+                <h5 class="quote" style="font-size: 19px;">"Trust in your craft enough to admire it, study it, perfect
+                    it, breathe it. Never stop getting better at whatever
+                    it is that you love to do." - Reyna Biddy
+                </h5>
                 <div class="row justify-content-center">
-                    <div class="col-md-3 bg-white text-dark m-4">
+                    <div class="col-md-3 m-4 text-light box justify-content-center">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             labori in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
-                    <div class="col-md-3 bg-white text-dark m-4 ">
+                    <div class="col-md-3 m-4 text-light box justify-content-center">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labori in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
-                    <div class="col-md-3 bg-white text-dark m-4">
+                    <div class="col-md-3 m-4 text-light box justify-content-center">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. mollit anim id est laborum.</p>
                     </div>
@@ -167,23 +190,27 @@
             </div> <!-- skills container ends-->
         </section> <!-- skills section ends-->
 
-        <section id="contact" class="section-title">
+        <section id="contact" class="section-container">
+            <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+                <path d="M0 0 L50 100 L100 0 Z" fill="#262626" stroke="#262626"></path>
+            </svg>
             <div class="container-fluid text-center">
-                <h2 class="section-title">Connect With Me</h2>
+                <h2 class="section-title">CONNECT WITH ME</h2>
                 <h5 class="quote">"Giving connects two people, the giver and the receiver, and this connection gives
                     birth to a new sense of belonging."
                     - Deepak Chopra</h5>
                 <div class="row justify-content-center">
-                    <div class="col-md-3 bg-white text-dark m-4">
+                    <div class="col-md-3 m-4 text-light box justify-content-center">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             labori in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
-                    <div class="col-md-3 bg-white text-dark m-4 ">
+                    <div class="col-md-3 m-4 text-light box justify-content-center ">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labori in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
-                    <div class="col-md-3 bg-white text-dark m-4">
+                    <div class="col-md-3 m-4 text-light box justify-content-center">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. mollit anim id est laborum.</p>
                     </div>
@@ -207,4 +234,5 @@
     </div> <!-- wrapper ends -->
 
 </body>
+
 </html>
