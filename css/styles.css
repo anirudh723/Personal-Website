@@ -10,6 +10,7 @@ body, html {
     font-size: 1em;
     font-family: 'Raleway', sans-serif;
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 #wrapper {
@@ -35,6 +36,7 @@ nav {
     width: 100%;
     max-width: 100%;
     height: 100vh;
+    position: relative;
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -54,12 +56,17 @@ nav {
 }
 
 .section-container {
+    /* padding: 4%; */
     margin-top: 3.0rem 0;
     width: 100%;
 }
 
 #about.section-container {
     margin-bottom: 5.0rem;
+}
+
+#about div.row > .col-md-6 {
+    padding: 2%;
 }
 
 .intro-text {
@@ -226,6 +233,10 @@ ul.navbar-nav li a.nav-link {
     }
 }
 
+/* #triangle {
+    margin-top: -3%;
+} */
+
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
@@ -334,14 +345,11 @@ ul.navbar-nav li a.nav-link {
   }
 
   @media screen and (max-width: 560px) {
-      #spotlight {
+       #spotlight {
         background-image: url('../images/bg-spotlight-mini.jpg');
         /* width: 100%;
-        height: 230px; */
-        /* position: relative;  */
-        /* top: 0;
-        left: 0;  */
-        background-size: 100% 100%;
+        height: 230px; 
+        background-size: 100% 100%; */
       }
 
       h2.intro-text {
@@ -349,5 +357,15 @@ ul.navbar-nav li a.nav-link {
       }
       h1.intro-text {
           font-size: 1.6rem;
+      }
+
+      /* .section-container {
+        padding: 5%;
+    } */
+  }
+
+  @media only screen and (max-width: 1366px) {
+      #spotlight {
+          background-attachment: scroll;
       }
   }
