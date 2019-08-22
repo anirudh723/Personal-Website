@@ -188,7 +188,7 @@ ul.navbar-nav li a.nav-link {
     }
 
 .box:hover:before {
-    animation: animate-right-down 1s linear forwards;
+    animation: animate-right-down 1.5s linear forwards;
 }
 @keyframes animate-right-down {
     0%
@@ -231,7 +231,7 @@ ul.navbar-nav li a.nav-link {
     border: 3px solid transparent
   }
 .box:hover:after {
-    animation: animate-down-right 1s linear forwards;
+    animation: animate-down-right 1.5s linear forwards;
 }
 @keyframes animate-down-right {
     0%
