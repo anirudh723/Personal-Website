@@ -96,28 +96,6 @@ nav {
     font-size: 2.5rem;
 }
 
-/* Style all font awesome icons */
-#contact.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-  }
-  
-  /* Add a hover effect if you want */
-  #contact.fa:hover {
-    opacity: 0.7;
-  }
-  
-  /* Set a specific color for each brand */
-  
-  /* Facebook */
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-
 #about div.row > .col-md-6 {
     padding: 2%;
 }
@@ -130,6 +108,10 @@ h2.section-title {
     padding: 30px;
     width: 100%;
     text-align: center;
+}
+
+.skill-header {
+  color: rgb(151, 93, 93);
 }
 
 .header-bar {
@@ -213,7 +195,7 @@ ul.navbar-nav li a.nav-link {
     {
         width: 0;
         height: 0;
-        border-top-color: #f00;
+        border-top-color: rgb(151, 93, 93);
         border-right-color: transparent;
         border-bottom-color: transparent;
         border-left-color: transparent;
@@ -222,8 +204,8 @@ ul.navbar-nav li a.nav-link {
     {
         width: 100%;
         height: 0;
-        border-top-color: #f00;
-        border-right-color: #f00;
+        border-top-color: rgb(151, 93, 93);
+        border-right-color: rgb(151, 93, 93);
         border-bottom-color: transparent;
         border-left-color: transparent;
     }
@@ -231,8 +213,8 @@ ul.navbar-nav li a.nav-link {
     {
         width: 100%;
         height: 100%;
-        border-top-color: #f00;
-        border-right-color: #f00;
+        border-top-color: rgb(151, 93, 93);
+        border-right-color: rgb(151, 93, 93);
         border-bottom-color: transparent;
         border-left-color: transparent;
     }
@@ -259,7 +241,7 @@ ul.navbar-nav li a.nav-link {
         border-top-color: transparent;
         border-right-color: transparent;
         border-bottom-color: transparent;
-        border-left-color: #f00;
+        border-left-color: rgb(151, 93, 93);
     }
     50%
     {
@@ -267,8 +249,8 @@ ul.navbar-nav li a.nav-link {
         height: 100%;
         border-top-color: transparent;
         border-right-color: transparent;
-        border-bottom-color: #f00;
-        border-left-color: #f00;
+        border-bottom-color: rgb(151, 93, 93);
+        border-left-color: rgb(151, 93, 93);
     }
     100%
     {
@@ -276,8 +258,8 @@ ul.navbar-nav li a.nav-link {
         height: 100%;
         border-top-color: transparent;
         border-right-color: transparent;
-        border-bottom-color: #f00;
-        border-left-color: #f00;
+        border-bottom-color: rgb(151, 93, 93);
+        border-left-color: rgb(151, 93, 93);
     }
 }
 
