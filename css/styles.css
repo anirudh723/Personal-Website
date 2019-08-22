@@ -126,8 +126,8 @@ h2.section-title {
     font-weight: 300;
     font-family: 'Raleway', sans-serif;
     font-size: 30px;
-    margin: 60px 40px auto auto;
-    padding: 30px 0;
+    margin: 60px 0px auto auto;
+    padding: 30px;
     width: 100%;
     text-align: center;
 }
