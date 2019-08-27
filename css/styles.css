@@ -123,11 +123,8 @@ h2.section-title {
 }
 
 p {
-  margin: 3% 0;
-  line-height: 1.9em;
-}
-
-#about p {
+    margin: 3% 0;
+    line-height: 1.9em;
     text-align: justify;
 }
 
