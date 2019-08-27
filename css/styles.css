@@ -45,6 +45,7 @@ nav {
     -moz-background-size: cover;
     -o-background-size: cover;
     overflow: hidden;
+    padding: 0;
 }
 
 .spotlight-box {
