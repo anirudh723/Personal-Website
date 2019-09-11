@@ -145,6 +145,10 @@ h5 {
     line-height: 1.4;
 }
 
+.mob-copyright {
+  display: none;
+}
+
 ul.navbar-nav li a.nav-link {
     padding: 2% 2.5%;
     font-size: .8em;
@@ -370,8 +374,11 @@ ul.navbar-nav li a.nav-link {
       h1.intro-text {
           font-size: 1.6rem;
       }
-      .copyright {
-        font-size: 0.5em;
+      .big-copyright {
+        display: none;
+      }
+      .mob-copyright {
+        display: inline;
       }
   }
 
