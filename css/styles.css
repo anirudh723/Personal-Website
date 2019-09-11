@@ -380,6 +380,9 @@ ul.navbar-nav li a.nav-link {
       .mob-copyright {
         display: block;
       }
+      #portfolio h3 {
+        font-size: 1.6rem;
+      }
   }
 
   @media only screen and (max-width: 1366px) {
