@@ -378,7 +378,7 @@ ul.navbar-nav li a.nav-link {
         display: none;
       }
       .mob-copyright {
-        display: inline;
+        display: block;
       }
   }
 
