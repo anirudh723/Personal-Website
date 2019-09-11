@@ -370,6 +370,9 @@ ul.navbar-nav li a.nav-link {
       h1.intro-text {
           font-size: 1.6rem;
       }
+      .copyright {
+        font-size: 0.7em;
+      }
   }
 
   @media only screen and (max-width: 1366px) {
