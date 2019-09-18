@@ -37,10 +37,10 @@
     <script src="js/stickyNav.js"> </script>
     <script src="js/slideshow.js"> </script>
     <script>
-        $(document).ready(function () {
-            $(this).scrollTop(0);
+        $(window).on('beforeunload', function () {
+            $(window).scrollTop(0);
         });
-        
+
         $(function () {
             // Remove the # from the hash, as different browsers may or may not include it
             var hash = location.hash.replace('#', '');
