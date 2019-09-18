@@ -40,6 +40,16 @@
         $(document).ready(function () {
             $(this).scrollTop(0);
         });
+        
+        $(function () {
+            // Remove the # from the hash, as different browsers may or may not include it
+            var hash = location.hash.replace('#', '');
+
+            if (hash != '') {
+                // Clear the hash in the URL
+                location.hash = '';
+            }
+        });
     </script>
 </head>
 
@@ -152,8 +162,10 @@
                     </div>
                     <div class="col-md-3 m-4 text-light box justify-content-center">
                         <h3 style="font-weight: 200">DOSHA BOX <i class="fa fa-at"></i></h3>
-                        <p>Currently working on a website for a business that provides herbal remedies, menstrual essentials, and
-                            organic treats. Using HTML5, CSS3, JavaScript, jQuery, and Boostrap4 to design/develop the website.</a>
+                        <p>Currently working on a website for a business that provides herbal remedies, menstrual
+                            essentials, and
+                            organic treats. Using HTML5, CSS3, JavaScript, jQuery, and Boostrap4 to design/develop the
+                            website.</a>
                         </p>
                     </div>
                 </div>
@@ -176,6 +188,9 @@
                                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                                 <li data-target="#myCarousel" data-slide-to="1"></li>
                                 <li data-target="#myCarousel" data-slide-to="2"></li>
+                                <li data-target="#myCarousel" data-slide-to="3"></li>
+                                <li data-target="#myCarousel" data-slide-to="4"></li>
+                                <li data-target="#myCarousel" data-slide-to="5"></li>
                             </ul>
 
                             <div class="carousel-inner">
@@ -183,22 +198,25 @@
                                     <img class="img-fluid" src="images/image-1.jpg">
                                 </div>
 
-                                <!-- <div class="carousel-item">
-                                    <img class="img-fluid" src="images/image-2.jpg">
-                                </div> -->
+                                <div class="carousel-item">
+                                    <img class="img-fluid" src="images/image-7.jpg">
+                                </div>
 
                                 <div class="carousel-item">
                                     <img class="img-fluid" src="images/image-3.jpg">
                                 </div>
-                                <!-- <div class="carousel-item">
-                                    <img class="img-fluid" src="images/image-4.jpg">
-                                </div> -->
+
+                                <div class="carousel-item">
+                                    <img class="img-fluid" src="images/image-6.jpg">
+                                </div>
+
                                 <div class="carousel-item">
                                     <img class="img-fluid" src="images/image-5.jpg">
                                 </div>
-                                <!-- <div class="carousel-item">
-                                    <img class="img-fluid" src="images/image-6.jpg">
-                                </div> -->
+
+                                <div class="carousel-item">
+                                    <img class="img-fluid" src="images/image-8.jpg">
+                                </div>
 
                             </div> <!-- carousel-inner ends-->
 
@@ -302,8 +320,8 @@
                 <div class="row justify-content-center" style="flex-wrap: nowrap;">
                     <!--tools, libraries, frameworks, os-->
                     <div class="col-md-3 m-4 text-light justify-content-center">
-                        <a href="https://www.linkedin.com/in/anirudh723/" target="_blank"><i
-                                class="fab fa-linkedin" style="font-size:48px; color: white;"></i></a>
+                        <a href="https://www.linkedin.com/in/anirudh723/" target="_blank"><i class="fab fa-linkedin"
+                                style="font-size:48px; color: white;"></i></a>
                     </div>
                     <div class="col-md-3 m-4 text-light justify-content-center">
                         <a href="mailto:anirudh.s723@gmail.com" target="_blank"><i class="fas fa-envelope"
@@ -321,11 +339,12 @@
                 <div class="row">
                     <div class="col justify-content-center">
                         <p class="text-center big-copyright" style="margin: 0.7%;">Designed and Developed by Anirudh
-                                Singh&emsp;&emsp;&emsp;&emsp;&copy;All Rights Reserved 2019
+                            Singh&emsp;&emsp;&emsp;&emsp;&copy;All Rights Reserved 2019
                         </p>
-                        <p class="text-center mob-copyright" style="margin: 0.7%; font-size: 0.8em;">Designed and Developed by Anirudh
+                        <p class="text-center mob-copyright" style="margin: 0.7%; font-size: 0.8em;">Designed and
+                            Developed by Anirudh
                             Singh<br>&copy;All Rights Reserved 2019
-                    </p>
+                        </p>
                     </div>
                 </div>
             </div> <!-- footer container ends-->
