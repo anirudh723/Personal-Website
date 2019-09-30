@@ -29,7 +29,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-  } 
+} 
 
 #spotlight {
     background-image: url('../images/bg-spotlight.jpg');
@@ -66,18 +66,18 @@ nav {
     display: inline-block;
     vertical-align: middle;
     float: none;
-  }
+}
 
-  #portfolio.row {
-    display: table;
-  }
+#portfolio.row {
+  display: table;
+}
 
-  .row-eq-height {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
 
 .section-container {
     margin-top: 3.0rem 0;
@@ -170,31 +170,32 @@ ul.navbar-nav li a.nav-link {
     margin: 5px 2px; 
 }
   
-  #myBtn:hover {
-    background-color: white;
-    color: #666
-  }
-  
-  .box {
-      width: 100%;
-      height: 100%;
-      margin-bottom: 4rem;
-  }
+#myBtn:hover {
+  background-color: white;
+  color: #666
+}
 
-  .box:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 0;
-      height: 0;
-      background: transparent;
-      border: 3px solid transparent
-    }
+.box {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 4rem;
+}
+
+.box:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 3px solid transparent
+}
 
 .box:hover:before {
     animation: animate-right-down 1.5s linear forwards;
 }
+
 @keyframes animate-right-down {
     0%
     {
@@ -234,10 +235,12 @@ ul.navbar-nav li a.nav-link {
     height: 0;
     background: transparent;
     border: 3px solid transparent
-  }
+}
+
 .box:hover:after {
     animation: animate-down-right 1.5s linear forwards;
 }
+
 @keyframes animate-down-right {
     0%
     {
@@ -268,125 +271,42 @@ ul.navbar-nav li a.nav-link {
     }
 }
 
-/* 
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
+@media screen and (max-width: 768px) {
+  #spotlight {
+      height: 60vh;
   }
-  
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+  .intro-text {
+      display: none;
+      font-family: 'Oswald', sans-serif;
+      letter-spacing: 0.1em;
+      line-height: 3.0;
   }
-  
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
+}
 
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: initial;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  } */
-
-
-  @media screen and (max-width: 768px) {
-    #spotlight {
-        height: 60vh;
-    }
-    .intro-text {
-        display: none;
-        font-family: 'Oswald', sans-serif;
-        letter-spacing: 0.1em;
-        line-height: 3.0;
-    }
-  }
-
-  @media screen and (max-width: 560px) {
-       #spotlight {
-        background-image: url('../images/bg-spotlight-mini.jpg');
-      }
-
-      h2.intro-text {
-          font-size: 1.4rem;
-      }
-      h1.intro-text {
-          font-size: 1.6rem;
-      }
-      .big-copyright {
-        display: none;
-      }
-      .mob-copyright {
-        display: block;
-      }
-      #portfolio h3 {
-        font-size: 1.6rem;
-      }
-  }
-
-  @media only screen and (max-width: 1366px) {
+@media screen and (max-width: 560px) {
       #spotlight {
-          background-attachment: scroll;
-      }
-  }
+      background-image: url('../images/bg-spotlight-mini.jpg');
+    }
+
+    h2.intro-text {
+        font-size: 1.4rem;
+    }
+    h1.intro-text {
+        font-size: 1.6rem;
+    }
+    .big-copyright {
+      display: none;
+    }
+    .mob-copyright {
+      display: block;
+    }
+    #portfolio h3 {
+      font-size: 1.6rem;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    #spotlight {
+        background-attachment: scroll;
+    }
+}
