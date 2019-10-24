@@ -122,6 +122,10 @@ h2.section-title {
   background: white;
 }
 
+.ekko-lightbox-nav-overlay a {
+    display: none;
+}
+
 p {
     margin: 3% 0;
     line-height: 1.9em;
