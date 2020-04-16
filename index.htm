@@ -4,13 +4,15 @@
 <head>
     <title> Anirudh Singh </title>
 
+    <!-- Meta tags begins -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Anirudh Singh's Portfolio">
     <meta name="keywords" content="Student, Software Developer, Computer Science, Northeastern University, Photography">
     <meta name="author" content="Anirudh Singh">
+    <!-- Meta tags ends -->
 
-    <!--Stylesheets-->
+    <!--Stylesheets begins -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
@@ -23,10 +25,456 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css"
         integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
-    <link rel="stylesheet"
-        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <!--Stylesheets ends -->
+</head>
 
-    <!--Scripts-->
+
+<body>
+    <!--Page Wrapper begins-->
+    <div id="wrapper">
+
+        <!-- Spotlight begins -->
+        <section>
+            <!-- Spotlight container fluid begins -->
+            <div id="spotlight" class="container-fluid">
+                <!-- Navigation Bar begins -->
+                <nav class="navbar sticky navbar-expand-md navbar-dark">
+                    <a class="navbar-brand text-white-50" href="index.htm">Anirudh Singh</a>
+
+                    <!-- Collapsible Navigation Bar Button begins -->
+                    <button class="navbar-toggler bg-secondary" onclick="toggleDropdown();" type="button"
+                        data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Collapsible Navbar Button ends -->
+
+                    <!-- Navigation Bar Links begins -->
+                    <div id="collapsibleNavbar" class="collapse navbar-collapse sidenav justify-content-end">
+                        <ul class="navbar-nav text-uppercase" style="letter-spacing: 2px; font-size: 20px;">
+                            <li class="nav-item"> <a class="nav-link" href="index.htm">Home</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="#about">About Me</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="#portfolio">Portfolio</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="#gallery">Gallery</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="#skills">Skills</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="#contact">Contact</a> </li>
+                        </ul>
+                    </div>
+                    <!-- Navigation Bar Links ends -->
+                </nav>
+                <!-- Navigation Bar begins -->
+
+                <!-- Background Image and Hero Text container-fluid begins -->
+                <div class="container-fluid">
+                    <!-- Spotlight box with image and text begins -->
+                    <div class="spotlight-box animated">
+                        <h2 class="intro-text intro-text-mob ">Hello! My name is Anirudh Singh.</h2>
+                        <h1 class="intro-text intro-text-mob">Developer. Photographer.</h1>
+                        <a href="#portfolio"> <button class="btn btn-outline-secondary p-2 mt-5;">View My Portfolio!
+                                <i class="fas fa-laptop-code"></i> </button>
+                        </a>
+                    </div>
+                    <!-- Spotlight box with image and text ends -->
+                </div>
+                <!-- Background Image and Hero Text container-fluid ends -->
+            </div> 
+            <!-- Spotlight container fluid ends -->
+        </section> 
+        <!-- Spotlight ends -->
+
+        <!-- About starts -->
+        <section id="about" class="section-container">
+            <!--About container begins-->
+            <div  class="container-fluid">
+                <h2 class="section-title">ABOUT ME</h2>
+                <h5 class="quote">“Protons give an atom its identity, electrons its personality.” - Bill Bryson</h5>
+                <!-- Row begins -->
+                <div class="row mt-4">
+                    <!-- Column begins -->
+                    <div class="col-md-6 d-flex align-items-center">
+                        <img src="images/ani2.jpg" class="about-me-pic img-fluid" style="border-radius: 50%;">
+                    </div>
+                    <!-- Column ends -->
+                    <!-- Column begins -->
+                    <div class="col-md-6" style="padding: 5%;">
+                        <p>I am currently pursuing a Bachelor's degree in Computer Science with a minor in Mathematics
+                            from Northeastern University in Boston, Massachussetts. Soon after, I plan to pursue a Master's
+                            degree in Computer Science with a specialization in Software Engineering.</p>
+
+                        <p>My interests span from making vibrant, dynamic websites using HTML, CSS, JavaScript, &
+                            its libraries/frameworks, to developing animations and Alexa Skills using Java, Python, & the
+                            Amazon Web Services' (AWS) cloud services, to just walking around nature & capturing
+                            simple, but story-telling moments.</p>
+
+                        <p>I plan on developing more websites using other frameworks and libaries such as AngularJS and
+                            React. I am also looking to develop larger software applications that can be used in the real world.</p>
+                    </div>
+                    <!-- Column ends -->
+                </div>
+                <!-- Row ends -->
+            </div> 
+            <!-- About container ends-->
+        </section>
+        <!-- About ends -->
+
+
+        <!--Portfolio begins-->
+        <section id="portfolio" class="section-container" style="background-color: #262626">
+            <svg id="triangle" preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0 L50 100 L100 0 Z" fill="black" stroke="black"></path>
+            </svg>
+
+            <!-- Rows container begins -->
+            <div class="container-fluid text-center">
+                <h2 class="section-title">PORTFOLIO</h2>
+                <h5 class="quote">"The best way to learn is by doing. The only way to build a strong work ethic is
+                    getting your hands dirty."
+                    – Alex Spanos</h5>
+                <!-- Row begins -->
+                <div class="row justify-content-center row-eq-height">
+                    <!-- Column begins -->
+                    <div class="col-md-3 m-4 text-light box justify-content-center">
+                        <h3 style="font-weight: 200">ALEXA SKILL <i class="material-icons">chat_bubble_outline</i></h3>
+                        <p>Built an Alexa skill called 'CSWiki', which provides simple and helpful definitions for
+                            common keywords in the area of Computer Science. I used Python to write the program, along
+                            with the Amazon Web Services (AWS) Lambda tool in order to run and test my code.</p>
+                    </div>
+                    <!-- Column ends -->
+                    <!-- Column begins -->
+                    <div class="col-md-3 m-4 text-light box justify-content-center">
+                        <h3 style="font-weight: 200">BASCULE BRIDGE <i class="material-icons"
+                                style="transform: rotate(-45deg)">remove</i><i class="material-icons"
+                                style="transform: rotate(45deg)">remove</i></h3>
+                        <p>Built a miniature bascule bridge using craft sticks. Using an Arduino and
+                            set sensors, I programmed the bridge to open/close if an object is approaching the bridge.
+                            The bridge includes a variety of components regarding structural analysis and robotic
+                            programming.
+                        </p>
+                    </div>
+                    <!-- Column ends -->
+                    <!-- Column begins -->
+                    <div class="col-md-3 m-4 text-light box justify-content-center">
+                        <h3 style="font-weight: 200">DOSHA BOX <i class="fa fa-at"></i></h3>
+                        <p>Currently working on a website for a business that provides herbal remedies, menstrual
+                            essentials, and
+                            organic treats. Using HTML5, CSS3, JavaScript, jQuery, and Boostrap4 to design/develop the
+                            website.</a>
+                        </p>
+                    </div>
+                    <!-- Column begins -->
+                </div>
+                <!-- Row ends -->
+            </div> 
+            <!-- Rows container begins -->
+        </section>    
+        <!-- Portfolio ends -->
+        
+
+        <!-- Gallery begins -->
+        <section id="gallery" class="section-container">
+            <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+                <path d="M0 0 L50 100 L100 0 Z" fill="#262626" stroke="#262626"></path>
+            </svg>
+            
+            <!-- Rows Container begins -->
+            <div class="container-fluid" style="padding: 3rem;">
+                <h2 class="section-title">GALLERY</h2>
+                <h5 class="quote">"A photograph is a secret about a secret. The more it tells you, the less you know." -
+                    Peter Gasser </h5>
+                    
+                <!-- Row begins -->
+                <div class="row">
+                    <!-- Column begins -->
+                    <div class="col-md-4">
+                        <a href="images/image-1lightbox.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-type= "image">
+                            <img src="images/image-1bigger.jpg" class="img-fluid">
+                        </a>
+                    </div>
+                    <!-- Column ends -->
+                    <!-- Column begins -->
+                    <div class="col-md-4">
+                        <a href="images/image-2lightbox.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-type= "image">
+                            <img src="images/image-2bigger.jpg" class="img-fluid">
+                        </a>
+                    </div>
+                    <!-- Column ends -->
+                    <!-- Column begins -->
+                    <div class="col-md-4">
+                        <a href="images/image-3lightbox.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-type= "image">
+                            <img src="images/image-3bigger.jpg" class="img-fluid">
+                        </a>
+                    </div>
+                    <!-- Column ends -->
+                </div>
+                <!-- Row ends -->
+                
+                <!-- Row begins -->
+                <div class="row pt-5 text-center">
+                    <!-- Column begins -->
+                    <div class="col-md-4">
+                        <a href="images/image-4lightbox.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-type= "image">
+                            <img src="images/image-4bigger.jpg" class="img-fluid">
+                        </a>
+                    </div>
+                    <!-- Column ends -->
+                    <!-- Column begins -->
+                    <div class="col-md-4">
+                        <a href="images/image-5lightbox.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-type= "image">
+                            <img src="images/image-5bigger.jpg" class="img-fluid">
+                        </a>
+                    </div>
+                    <!-- Column ends -->
+                    <!-- Column begins -->
+                    <div class="col-md-4">
+                        <a href="images/image-6lightbox.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-type= "image">
+                            <img src="images/image-6bigger.jpg" class="img-fluid">
+                        </a>
+                    </div>
+                    <!-- Column ends -->
+                </div> 
+                <!-- Row ends -->
+                
+                <!-- Row begins -->
+                <div class="row pt-5 text-center">
+                    <!-- Column begins -->
+                    <div class="col-md-4">
+                        <a href="images/image-7lightbox.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+                            <img src="images/image-7bigger.jpg" class="img-fluid">
+                        </a>
+                    </div>
+                    <!-- Column ends -->
+                    <!-- Column begins -->
+                    <div class="col-md-4">
+                        <a href="images/image-8lightbox.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+                            <img src="images/image-8bigger.jpg" class="img-fluid">
+                        </a>
+                    </div>
+                    <!-- Column ends -->
+                    <!-- Column begins -->
+                    <div class="col-md-4">
+                        <a href="images/image-9lightbox.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+                            <img src="images/image-9bigger.jpg" class="img-fluid">
+                        </a>
+                    </div>
+                    <!-- Column ends -->
+                </div>
+                <!-- Row ends -->
+            </div>
+            <!-- Rows container begins -->
+        </section>
+        <!-- Gallery ends -->
+
+
+        <!-- Skills begins -->
+        <section id="skills" class="section-container" style="background-color: #262626">
+            <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+                <path d="M0 0 L50 100 L100 0 Z" fill="black" stroke="black"></path>
+            </svg>
+
+            <!-- Rows Container begins -->
+            <div class="container-fluid text-center">
+                <h2 class="section-title">SKILLS</h2>
+                <h5 class="quote" style="font-size: 19px;">"Trust in your craft enough to admire it, study it, perfect
+                    it, breathe it. Never stop getting better at whatever
+                    it is that you love to do." - Reyna Biddy
+                </h5>
+                
+                <h2 class="section-title skill-header">Languages</h2>
+                <!-- Row begins -->
+                <div class="row justify-content-center">
+                    <!-- Column begins -->
+                    <div class="col-md-3 m-4 p-3 text-light justify-content-center">
+                        <i class="devicon-java-plain skills-icon"></i>
+                        <h2>JAVA</h2>
+                    </div>
+                    <!-- Column ends -->
+                    <!-- Column begins -->
+                    <div class="col-md-3 m-4 p-3 text-light justify-content-center">
+                        <i class="devicon-python-plain skills-icon"></i>
+                        <h2>PYTHON</h2>
+                    </div>
+                    <!-- Column ends -->
+                    <!-- Column begins -->
+                    <div class="col-md-3 m-4 p-3 text-light justify-content-center">
+                        <i class="devicon-c-plain skills-icon"></i>
+                        <i class="devicon-cplusplus-plain skills-icon"></i>
+                        <h2>C/C++</h2>
+                    </div>
+                    <!-- Column ends -->
+                </div>
+                <!-- Row ends -->
+                <!-- Row begins -->
+                <div class="row justify-content-center">
+                    <!-- Column begins -->
+                    <div class="col-md-3 p-3 m-4 text-light justify-content-center">
+                        <i class="devicon-javascript-plain skills-icon"></i>
+                        <h2>JAVASCRIPT</h2>
+                    </div>
+                    <!-- Column ends -->
+                    <!-- Column begins -->
+                    <div class="col-md-3 p-3 m-4 text-light justify-content-center">
+                        <i class="devicon-html5-plain skills-icon"></i>
+                        <h2>HTML5</h2>
+                    </div>
+                    <!-- Column ends -->
+                    <!-- Column begins -->
+                    <div class="col-md-3 p-3 m-4 text-light justify-content-center">
+                        <i class="devicon-css3-plain skills-icon"></i>
+                        <h2>CSS3</h2>
+                    </div>
+                    <!-- Column ends -->
+                </div>
+                <!-- Row ends -->
+                
+                <h2 class="section-title skill-header" style="font-size: 28px;">Technologies/Tools</h2>
+                <!-- Row begins -->
+                <div class="row justify-content-center">
+                    <!-- Column begins -->
+                    <div class="col-md-3 p-3 m-4 text-light justify-content-center">
+                        <i class="devicon-bootstrap-plain skills-icon"></i>
+                        <h2>BOOTSTRAP4</h2>
+                    </div>
+                    <!-- Column ends -->
+                    <!-- Column begins -->
+                    <div class="col-md-3 p-3 m-4 text-light justify-content-center">
+                        <i class="devicon-jquery-plain skills-icon"></i>
+                        <h2>JQUERY</h2>
+                    </div>
+                    <!-- Column ends -->
+                    <!-- Column begins -->
+                    <div class="col-md-3 p-3 m-4 text-light justify-content-center">
+                        <i class="devicon-git-plain skills-icon"></i>
+                        <h2>GIT</h2>
+                    </div>
+                    <!-- Column ends -->
+                </div>
+                <!-- Row ends -->
+                <!-- Row begins -->
+                <div class="row justify-content-center">
+                    <!-- Column begins -->
+                    <div class="col-md-3 m-4 text-light justify-content-center">
+                        <i class="devicon-amazonwebservices-plain skills-icon"></i>
+                        <h2>AWS</h2>
+                    </div>
+                    <!-- Column ends -->
+                    <!-- Column begins -->
+                    <div class="col-md-3 m-4 text-light justify-content-center">
+                        <i class="devicon-windows8-plain skills-icon"></i>
+                        <h2>WINDOWS</h2>
+                    </div>
+                    <!-- Column ends -->
+                    <!-- Column begins -->
+                    <div class="col-md-3 m-4 text-light justify-content-center">
+                        <i class="devicon-linux-plain skills-icon"></i>
+                        <h2>LINUX</h2>
+                    </div>
+                    <!-- Column ends -->
+                </div>
+                <!-- Row ends -->
+                <!-- Row begins -->
+                <div class="row justify-content-center">
+                    <!-- Column begins -->
+                    <div class="col-md-3 m-4 text-light justify-content-center">
+                        <i class="devicon-mysql-plain skills-icon"></i>
+                        <h2>MySQL</h2>
+                    </div>
+                    <!-- Column ends -->
+                    <!-- Column begins -->
+                    <div class="col-md-3 m-4 text-light justify-content-center">
+                        <i class="devicon-ubuntu-plain skills-icon"></i>
+                        <h2>UBUNTU</h2>
+                    </div>
+                    <!-- Column ends -->
+                    <!-- Column begins -->
+                    <div class="col-md-3 m-4 text-light justify-content-center">
+                        <i class="devicon-visualstudio-plain skills-icon"></i>
+                        <h2>VS CODE</h2>
+                    </div>
+                    <!-- Column ends -->
+                </div>
+                <!-- Row ends -->
+            </div> 
+            <!-- Rows container ends -->
+        </section> 
+        <!-- Skills ends -->
+
+
+        <!-- Contact begins -->
+        <section id="contact" class="section-container">
+            <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+                <path d="M0 0 L50 100 L100 0 Z" fill="#262626" stroke="#262626"></path>
+            </svg>
+
+            <!-- Rows container begins -->
+            <div class="container-fluid text-center">
+                <h2 class="section-title">CONNECT WITH ME</h2>
+                <h5 class="quote">"Giving connects two people, the giver and the receiver, and this connection gives
+                    birth to a new sense of belonging."
+                    - Deepak Chopra</h5>
+                <!-- Rows begins -->
+                <div class="row justify-content-center" style="flex-wrap: nowrap;">
+                    <!-- Column begins -->
+                    <div class="col-md-3 m-4 text-light justify-content-center">
+                        <a href="https://www.linkedin.com/in/anirudh723/" target="_blank"><i class="fab fa-linkedin"
+                                style="font-size:48px; color: white;"></i></a>
+                    </div>
+                    <!-- Column ends -->
+                    <!-- Column begins -->
+                    <div class="col-md-3 m-4 text-light justify-content-center">
+                        <a href="mailto:anirudh.s723@gmail.com" target="_blank"><i class="fas fa-envelope"
+                                style="font-size:48px; color: white;"></i></a>
+                    </div>
+                    <!-- Column ends -->
+                    <!-- Column begins -->
+                    <div class="col-md-3 m-4 text-light justify-content-center">
+                        <a href="https://github.com/anirudh723" target="_blank" style="color: white;"><i
+                                class="fab fa-github" style="font-size:48px; background: transparent;"></i></a>
+                    </div>
+                    <!-- Column ends -->
+                </div>
+                <!-- Rows ends -->
+            </div>
+            <!-- Rows container ends -->
+        </section>
+        <!-- Contact ends -->
+
+
+        <!-- Footer begins -->
+        <section id="footer">
+            <!-- Rows container begins -->
+            <div class="container-fluid bg-dark ">
+                <!-- Row begins -->
+                <div class="row">
+                    <!-- Column begins -->
+                    <div class="col justify-content-center">
+                        <p class="text-center big-copyright" style="margin: 0.7%;">Designed and Developed by Anirudh
+                            Singh&emsp;&emsp;&emsp;&emsp;&copy;All Rights Reserved 2019
+                        </p>
+                        <p class="text-center mob-copyright" style="margin: 0.7%; font-size: 0.8em;">Designed and
+                            Developed by Anirudh
+                            Singh<br>&copy;All Rights Reserved 2019
+                        </p>
+                    </div>
+                    <!-- Column ends -->
+                </div>
+                <!-- Row ends -->
+            </div> 
+            <!-- Rows container ends-->
+        </section> 
+        <!-- Footer ends -->
+
+        <!-- Back to Top Button -->
+        <button class="fas fa-arrow-circle-up rounded" onclick="topFunction()" id="myBtn" title="Go to top"></button>
+
+    </div> 
+    <!-- Page Wrapper ends -->
+
+
+    <!-- Scripts begins -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -50,7 +498,6 @@
 
         $(function () {
             var hash = location.hash.replace('#', '');
-
             if (hash != '') {
                 location.hash = '';
             }
@@ -61,312 +508,7 @@
                 $(this).ekkoLightbox();
             });
     </script>
-</head>
-
-<body>
-    <!--Wrappers begins-->
-    <div id="wrapper">
-        <!--Spotlight container fluid begins. Includes picture with hero text and navigation bar-->
-        <div id="spotlight" class="container-fluid">
-            <nav class="navbar sticky navbar-expand-md navbar-dark">
-                <a class="navbar-brand text-white-50" href="index.htm">Anirudh Singh</a>
-
-                <button class="navbar-toggler bg-secondary" onclick="toggleDropdown();" type="button"
-                    data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div id="collapsibleNavbar" class="collapse navbar-collapse sidenav justify-content-end">
-                    <ul class="navbar-nav text-uppercase" style="letter-spacing: 2px; font-size: 20px;">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.htm">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#gallery">Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-
-            <div class="container-fluid">
-                <div class="spotlight-box animated">
-                    <h2 class="intro-text intro-text-mob ">Hello! My name is Anirudh Singh.</h2>
-                    <h1 class="intro-text intro-text-mob">Developer. Photographer.</h1>
-                    <a href="#portfolio"> <button class="btn btn-outline-secondary p-2 mt-5;">View My Portfolio!
-                            <i class="fas fa-laptop-code"></i> </button>
-                    </a>
-                </div>
-            </div>
-
-        </div> <!-- spotlight container fluid ends -->
-
-        <!--About me begins-->
-        <div id="about" class="container-fluid section-container">
-            <h2 class="section-title">ABOUT ME</h2>
-            <h5 class="quote">“Protons give an atom its identity, electrons its personality.” - Bill Bryson</h5>
-            <div class="row mt-4">
-                <div class="col-md-6 d-flex align-items-center">
-                    <img src="images/ani2.jpg" class="about-me-pic img-fluid" style="border-radius: 50%;">
-                </div>
-                <div class="col-md-6" style="padding: 5%;">
-                    <p> Originally from the PNW. Thriving in the Beantown. </p>
-
-                    <p>I am currently pursuing a Bachelor's degree in Computer Science with a minor in Mathematics
-                        from
-                        Northeastern University in Boston, Massachussetts. Soon after, I plan to pursue a Master's
-                        degree in Cybersecurity.</p>
-
-                    <p>My interests span from making vibrant, dynamic websites using HTML, CSS, JavaScript, &
-                        its libraries/frameworks, to developing animations and Alexa Skills using Java, Python, & the
-                        Amazon Web Services' (AWS) cloud services, to just walking around nature & capturing
-                        simple, but story-telling moments.</p>
-
-                    <p>I plan on developing more websites using other frameworks and libaries such as AngularJS and
-                        React. I am also
-                        looking to develop larger software applications that can be used in the real world.</p>
-                </div>
-            </div>
-        </div> <!-- about me container ends-->
-
-        <!--Portfolio section begins-->
-        <section id="portfolio" class="section-container" style="background-color: #262626">
-            <svg id="triangle" preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 0 L50 100 L100 0 Z" fill="black" stroke="black"></path>
-            </svg>
-            <div class="container-fluid text-center">
-                <h2 class="section-title">PORTFOLIO</h2>
-                <h5 class="quote">"The best way to learn is by doing. The only way to build a strong work ethic is
-                    getting your hands dirty."
-                    – Alex Spanos</h5>
-                <div class="row justify-content-center row-eq-height">
-                    <div class="col-md-3 m-4 text-light box justify-content-center">
-                        <h3 style="font-weight: 200">ALEXA SKILL <i class="material-icons">chat_bubble_outline</i></h3>
-                        <p>Built an Alexa skill called 'CSWiki', which provides simple and helpful definitions for
-                            common keywords in the area of Computer Science. I used Python to write the program, along
-                            with the Amazon Web Services (AWS) Lambda tool in order to run and test my code.</p>
-                    </div>
-                    <div class="col-md-3 m-4 text-light box justify-content-center">
-                        <h3 style="font-weight: 200">BASCULE BRIDGE <i class="material-icons"
-                                style="transform: rotate(-45deg)">remove</i><i class="material-icons"
-                                style="transform: rotate(45deg)">remove</i></h3>
-                        <p>Built a miniature bascule bridge using craft sticks. Using an Arduino and
-                            set sensors, I programmed the bridge to open/close if an object is approaching the bridge.
-                            The bridge includes a variety of components regarding structural analysis and robotic
-                            programming.
-                        </p>
-                    </div>
-                    <div class="col-md-3 m-4 text-light box justify-content-center">
-                        <h3 style="font-weight: 200">DOSHA BOX <i class="fa fa-at"></i></h3>
-                        <p>Currently working on a website for a business that provides herbal remedies, menstrual
-                            essentials, and
-                            organic treats. Using HTML5, CSS3, JavaScript, jQuery, and Boostrap4 to design/develop the
-                            website.</a>
-                        </p>
-                    </div>
-                </div>
-            </div> <!-- portfolio container ends-->
-        </section>
-
-        <!--Gallery section begins-->
-        <section id="gallery" class="section-container">
-            <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
-                xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
-                <path d="M0 0 L50 100 L100 0 Z" fill="#262626" stroke="#262626"></path>
-            </svg>
- 
-            <div class="container-fluid" style="padding: 3rem;">
-                    <h2 class="section-title">GALLERY</h2>
-                    <h5 class="quote">"A photograph is a secret about a secret. The more it tells you, the less you know." -
-                        Peter Gasser </h5>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <a href="images/image-1lightbox.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-type= "image">
-                                <img src="images/image-1bigger.jpg" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="images/image-2lightbox.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-type= "image">
-                                <img src="images/image-2bigger.jpg" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="images/image-3lightbox.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-type= "image">
-                                <img src="images/image-3bigger.jpg" class="img-fluid">
-                            </a>
-                        </div>
-                    </div> <!--row ends-->
-                    
-                    <div class="row pt-5 text-center">
-                        <div class="col-md-4">
-                            <a href="images/image-4lightbox.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-type= "image">
-                                <img src="images/image-4bigger.jpg" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="images/image-5lightbox.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-type= "image">
-                                <img src="images/image-5bigger.jpg" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="images/image-6lightbox.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-type= "image">
-                                <img src="images/image-6bigger.jpg" class="img-fluid">
-                            </a>
-                        </div>
-                    </div> <!--row ends-->
-
-                    <div class="row pt-5 text-center">
-                            <div class="col-md-4">
-                                <a href="images/image-7lightbox.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                                    <img src="images/image-7bigger.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="col-md-4">
-                                <a href="images/image-8lightbox.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                                    <img src="images/image-8bigger.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="col-md-4">
-                                <a href="images/image-9lightbox.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                                    <img src="images/image-9bigger.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                        </div> <!--row ends-->
-              </div> <!-- container-fluid portfolio -->
-        </section> <!--Gallery section ends-->
-
-        <!--Skills section begins-->
-        <section id="skills" class="section-container" style="background-color: #262626">
-            <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
-                xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
-                <path d="M0 0 L50 100 L100 0 Z" fill="black" stroke="black"></path>
-            </svg>
-            <div class="container-fluid text-center">
-                <h2 class="section-title">SKILLS</h2>
-                <h5 class="quote" style="font-size: 19px;">"Trust in your craft enough to admire it, study it, perfect
-                    it, breathe it. Never stop getting better at whatever
-                    it is that you love to do." - Reyna Biddy
-                </h5>
-
-                <div class="row justify-content-center">
-                    <h2 class="section-title skill-header">Software Development</h2>
-                    <div class="col-md-5 m-4 p-3 text-light justify-content-center">
-                        <i class="devicon-java-plain skills-icon"></i>
-                        <h2>JAVA</h2>
-                    </div>
-                    <div class="col-md-5 m-4 p-3 text-light justify-content-center">
-                        <i class="devicon-python-plain skills-icon"></i>
-                        <h2>PYTHON</h2>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center">
-                    <h2 class="section-title skill-header">Web Development</h2>
-                    <div class="col-md-3 p-3 m-4 text-light justify-content-center">
-                        <i class="devicon-javascript-plain skills-icon"></i>
-                        <h2>JAVASCRIPT</h2>
-                    </div>
-                    <div class="col-md-3 p-3 m-4 text-light justify-content-center">
-                        <i class="devicon-html5-plain skills-icon"></i>
-                        <h2>HTML5</h2>
-                    </div>
-                    <div class="col-md-3 p-3 m-4 text-light justify-content-center">
-                        <i class="devicon-css3-plain skills-icon"></i>
-                        <h2>CSS3</h2>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center">
-                    <h2 class="section-title skill-header" style="font-size: 28px;">Tools, Libraries, Frameworks, OS
-                    </h2>
-                    <div class="col-md-3 p-3 m-4 text-light justify-content-center">
-                        <i class="devicon-bootstrap-plain skills-icon"></i>
-                        <h2>BOOTSTRAP4</h2>
-                    </div>
-                    <div class="col-md-3 p-3 m-4 text-light justify-content-center">
-                        <i class="devicon-jquery-plain skills-icon"></i>
-                        <h2>JQUERY</h2>
-                    </div>
-                    <div class="col-md-3 p-3 m-4 text-light justify-content-center">
-                        <i class="devicon-github-plain skills-icon"></i>
-                        <h2>GIT</h2>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-3 m-4 text-light justify-content-center">
-                        <i class="devicon-amazonwebservices-plain skills-icon"></i>
-                        <h2>AWS</h2>
-                    </div>
-                    <div class="col-md-3 m-4 text-light justify-content-center">
-                        <i class="devicon-windows8-plain skills-icon"></i>
-                        <h2>WINDOWS</h2>
-                    </div>
-                    <div class="col-md-3 m-4 text-light justify-content-center">
-                        <i class="devicon-linux-plain skills-icon"></i>
-                        <h2>LINUX</h2>
-                    </div>
-                </div>
-            </div> <!-- skills container ends-->
-        </section> <!--Skills section ends-->
-
-        <!--Contact section begins-->
-        <section id="contact" class="section-container">
-            <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
-                xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
-                <path d="M0 0 L50 100 L100 0 Z" fill="#262626" stroke="#262626"></path>
-            </svg>
-            <div class="container-fluid text-center">
-                <h2 class="section-title">CONNECT WITH ME</h2>
-                <h5 class="quote">"Giving connects two people, the giver and the receiver, and this connection gives
-                    birth to a new sense of belonging."
-                    - Deepak Chopra</h5>
-                <div class="row justify-content-center" style="flex-wrap: nowrap;">
-                    <div class="col-md-3 m-4 text-light justify-content-center">
-                        <a href="https://www.linkedin.com/in/anirudh723/" target="_blank"><i class="fab fa-linkedin"
-                                style="font-size:48px; color: white;"></i></a>
-                    </div>
-                    <div class="col-md-3 m-4 text-light justify-content-center">
-                        <a href="mailto:anirudh.s723@gmail.com" target="_blank"><i class="fas fa-envelope"
-                                style="font-size:48px; color: white;"></i></a>
-                    </div>
-                    <div class="col-md-3 m-4 text-light justify-content-center">
-                        <a href="https://github.com/anirudh723" target="_blank" style="color: white;"><i
-                                class="fab fa-github" style="font-size:48px; background: transparent;"></i></a>
-                    </div>
-                </div> <!-- contact container ends-->
-        </section> <!--Contact section ends-->
-
-        <!--Footer section begins-->
-        <section id="footer">
-            <div class="container-fluid bg-dark ">
-                <div class="row">
-                    <div class="col justify-content-center">
-                        <p class="text-center big-copyright" style="margin: 0.7%;">Designed and Developed by Anirudh
-                            Singh&emsp;&emsp;&emsp;&emsp;&copy;All Rights Reserved 2019
-                        </p>
-                        <p class="text-center mob-copyright" style="margin: 0.7%; font-size: 0.8em;">Designed and
-                            Developed by Anirudh
-                            Singh<br>&copy;All Rights Reserved 2019
-                        </p>
-                    </div>
-                </div>
-            </div> <!-- footer container ends-->
-        </section> <!--Footer section ends-->
-
-        <button class="fas fa-arrow-circle-up rounded" onclick="topFunction()" id="myBtn" title="Go to top"></button>
-    </div> <!-- wrapper ends -->
+     <!-- Scripts ends -->
 
 </body>
 
