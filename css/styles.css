@@ -101,6 +101,11 @@ nav {
     padding: 2%;
 }
 
+.about-me-description {
+    text-align: inherit;
+    font-size: 1.1em;
+}
+
 h2.section-title {
     font-weight: 300;
     font-family: 'Raleway', sans-serif;
@@ -162,7 +167,6 @@ ul.navbar-nav li a.nav-link {
 #myBtn {
     display: none;
     background-color: #666;
-    color: white;
     position: fixed;
     bottom: 20px;
     right: 20px;
